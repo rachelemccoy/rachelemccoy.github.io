@@ -1,0 +1,85 @@
+--------------------------------------------------------------------------------
+dir: .
+subdirlist: 
+	bootstrap
+	components
+	projects
+filelist: 
+	house.jpg
+	index-template.html
+	reference.txt
+	templater.py
+--------------------------------------------------------------------------------
+dir: ./bootstrap
+subdirlist: 
+	css
+	fonts
+	js
+filelist: 
+--------------------------------------------------------------------------------
+dir: ./bootstrap/css
+subdirlist: 
+filelist: 
+	bootstrap-theme.css
+	bootstrap-theme.css.map
+	bootstrap-theme.min.css
+	bootstrap-theme.min.css.map
+	bootstrap.css
+	bootstrap.css.map
+	bootstrap.min.css
+	bootstrap.min.css.map
+--------------------------------------------------------------------------------
+dir: ./bootstrap/fonts
+subdirlist: 
+filelist: 
+	glyphicons-halflings-regular.eot
+	glyphicons-halflings-regular.svg
+	glyphicons-halflings-regular.ttf
+	glyphicons-halflings-regular.woff
+	glyphicons-halflings-regular.woff2
+--------------------------------------------------------------------------------
+dir: ./bootstrap/js
+subdirlist: 
+filelist: 
+	bootstrap.js
+	bootstrap.min.js
+	npm.js
+--------------------------------------------------------------------------------
+dir: ./components
+subdirlist: 
+filelist: 
+	footer.html
+	header.html
+	style.css
+--------------------------------------------------------------------------------
+dir: ./projects
+subdirlist: 
+	thumbnails
+	titanium
+filelist: 
+	projects.css
+	projects.html
+--------------------------------------------------------------------------------
+dir: ./projects/thumbnails
+subdirlist: 
+filelist: 
+	01.jpg
+	02.jpg
+	03.jpg
+	04.jpg
+	05.png
+	06.jpg
+--------------------------------------------------------------------------------
+dir: ./projects/titanium
+subdirlist: 
+	imgs
+filelist: 
+	titanium.css
+	titanium.html
+--------------------------------------------------------------------------------
+dir: ./projects/titanium/imgs
+subdirlist: 
+filelist: 
+	1.png
+	2.png
+	3.png

@@ -1,0 +1,88 @@
+body
+{
+    font-family: Helvetica, Ariel, sans-serif;
+}
+
+#name
+{
+    font-family: Helvetica, Ariel, sans-serif;
+    font-weight: lighter;
+    display: block;
+    font-size: 2em;
+    -webkit-margin-before: 0.67em;
+    -webkit-margin-after: 0.67em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.titlecolor
+{
+    color: #58595B;
+}
+
+hr
+{
+    border-style: solid;
+    border-color: #E6E7E8;
+}
+
+body
+{
+    text-align:center;
+}
+
+#body-wrapper
+{
+
+    text-align:left;
+    width: 90%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+
+
+#navigation
+{
+    list-style: none;
+    padding-left:0px;
+    font-size:22px;
+    font-weight: lighter;
+    line-height:1.5;
+}
+
+#footer
+{
+    text-align:center;
+    color: #58595B;
+    margin-top:50px;
+}
+
+.home-image
+{
+
+    width: 100%;
+}
+
+
+@media (max-width: 991px)
+{
+    .navitem
+    {
+        display: inline;
+        margin-right: 15px;
+    }
+    #sidebar
+    {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+
+

@@ -1,0 +1,41 @@
+
+.cell-wrapper
+{
+    margin: auto;
+}
+.cell
+{
+    /*display: table-cell;*/
+    float: left;
+    padding: 20px;
+    position: relative;
+}
+
+.cell .thumb
+{
+    width: 220px;
+    height: 220px;
+}
+
+.cell .thumb-text
+{
+    position:absolute;
+    top: 30px;
+    left: 30px;
+    color: white;
+    font-size: 24px;
+    visibility: hidden;
+    width: 190px;
+}
+
+.cell:hover .thumb
+{
+    -webkit-filter:brightness(50%);
+    -moz-filter:brightness(50%);
+    filter: url(#brightness); /* required for FF */
+    filter:brightness(50%);
+}
+.cell:hover .thumb-text
+{
+    visibility: visible;
+}

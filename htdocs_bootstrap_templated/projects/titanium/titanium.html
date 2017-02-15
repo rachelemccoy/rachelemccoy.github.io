@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Rachel E. McCoy</title>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/components/style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="body-wrapper" class="row">
+        <div id="sidebar" class="titlecolor col-md-3 col-md-push-9">
+            <span id="name">Rachel&nbsp;E.&nbsp;McCoy</span>
+            <hr/>
+            <nav>
+                <ul id="navigation">
+                    <li class="titlecolor navitem"><a href="/index.html">Home</a></li>
+                    <li class="titlecolor navitem"><a href="/projects/projects.html">Projects</a></li>
+                    <li class="titlecolor navitem">About</li>
+                </ul>
+            </nav>
+        </div>
+        <div id="body-proper" class="col-md-8 col-md-pull-4">
+        
+<link rel="stylesheet" href="titanium.css">
+
+
+<h1>Characterization of Arconic Titanium Powders for 3D Printed Parts</h1>
+
+<p>For our Materials Science and Engineering capstone project, Marissa, Sabrina, David, and I partnered with John Barnes, VP for Advanced Manufacturing and Strategy of Arconic.  We set out to characterize the Class C titanium powders to its possible use in the additive manufacturing industry and analyze Class A2 powders of different reuse iterations to understand the effect of reuse on the size distribution and shape of the titanium powder.  Our analysis included characterization techniques ranging from powder rheometry to scanning electron microscopy (SEM) to machine vision.</p>
+ 
+<p>My work on the project dealt almost entirely with the imaging and image processing.  We took hundreds of SEM images, which were then analyzed in ImageJ to extract the particle sizes.  Among other processing techniques, automatic and manual watershed segmentation was performed to ensure ImageJ properly identified the powders, i.e. did not process two particles as being one if they were close together.  At this point, the Class A2, Class A2 reused, and Class B powders were analyzed by ImageJ.  An extra step was performed on the Class C powders, breaking the image analysis into two cases.  In Case 1, the images of the Class C powders were manually watershed, such that each particle and satellites were measured separately, regardless of whether the satellite was attached to a larger powder.  In Case 2, the automatic watershed was corrected, such that ImageJ would measure each particle with its satellites as one particle.</p>
+
+<div class="diagram">
+    <img src="imgs/1.png" class="diagram-image">
+    <p>a. SEM image of Class C powder (scale bar = 500 microns); b.and c. Case 1 and 2 ImageJ analysis, respectively, of the same image</p>
+</div>
+
+<p>Particle size analysis in ImageJ, followed by size distribution analysis in R showed the significant impact the satellites have on the Class C powders.</p>
+
+ <div class="diagram">
+    <img src="imgs/2.png" class="diagram-image" style="width: 60%;">
+    <p>d. and e. Histograms of Class C powders with Case 1 and 2 analyses, respectively</p>
+</div>
+
+<p>The next step was to introduce a new technique for image analysis: machine vision.  Machine vision is a computer program, written by a Carnegie Mellon University MSE graduate student, that utilizes machine learning to quantitatively visualize similarities between powders, which we used to analyze the reused powders.  Briefly, the program is “trained” on a series of images of one class of powder to learn the characteristic size distribution and shape factor.  A new set of images of the same class is then run through the program, which recognizes patterns and determines if the new set of images belongs with the original.  In the case of comparison of reused powders, the algorithm was trained on images of Class A2 powders and then tested on the images Class A2 powders that had been reused four times to see if the program categorized the two sets of powders differently.  As can be seen in the principal component analysis (PCA) map, the A2 and reused A2 powders were in fact characterized differently.</p>
+
+ <div class="diagram">
+    <img src="imgs/3.png" class="diagram-image" style="width: 60%;">
+    <p>PCA map clusters images based on features such as size and shape</p>
+</div>
+
+
+
+<p>Based on these findings, we recommended to Arconic that the Class C powders be subclassified into groups with smaller size distributions.  These powders could then be used in the 3D printing of porous components, such as those used in catalysis, as the porosity could be better controlled.  Machine vision can be further used to understand the relationship between different iterations of reuse.</p>
+
+<br/>
+
+<p>Team: Sabrina Liu, Rachel McCoy, David Ott, Marissa Schwartz
+<br/>Advisors: John Barnes, Arconic; Aharon Inspektor, CMU; Robert Heard, CMU
+<br/>Other contributors: Harshvardhan Jain (machine vision)
+​
+​            <br/>
+
+<p>"With great powder comes great responsibility."</p>
+    </div>
+    </div>
+    <div id="footer" class="row">Copyright Rachel E. McCoy 2013-2017</div>
+</body> 
