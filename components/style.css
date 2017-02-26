@@ -4,6 +4,7 @@ body
     text-align:center;
     max-width: 1800px;
     margin: auto;
+    color: #58595B;;
 }
 
 h1
@@ -12,16 +13,12 @@ h1
 }
 
 
-#name
+.navbar-brand
 {
     font-family: Helvetica, Ariel, sans-serif;
     font-weight: lighter;
     display: block;
-    font-size: 2em;
-    -webkit-margin-before: 0.67em;
-    -webkit-margin-after: 0.67em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
+    font-size: 32px;
 }
 
 .titlecolor
@@ -32,7 +29,7 @@ h1
 hr
 {
     border-style: solid;
-    border-color: #E6E7E8;
+    border-color: #58595B;
 }
 
 #body-wrapper
@@ -52,6 +49,11 @@ hr
      background: 0; 
      border: none; 
 }
+
+.navbar-brand
+{
+    padding-bottom: 50px;
+}
 /*
 #navigation
 {
@@ -65,6 +67,12 @@ hr
 .navbar-nav>li
 {
     float: none;
+    font-size: 22px;
+    font-weight: lighter;
+}
+.navbar-nav>li>a
+{
+    padding-left: 0px;
 }
 #footer
 {
@@ -75,16 +83,20 @@ hr
     margin-right: 0px;
 }
 
-#sidebar
-{
-    /*padding-left: 50px;*/
-}
-
 .home-image
 {
 
     width: 100%;
 }
+
+@media (max-width: 1200px)
+{
+    .navbar-brand
+    {
+        font-size: 28px;
+    }
+}
+
 
 @media (max-width: 991px)
 {
@@ -96,14 +108,20 @@ hr
         padding-left: 5px;
         padding-right: 5px;
     }
-    .navitem
+
+    .navbar-nav
     {
-        display: inline;
-        margin-right: 15px;
+        float: right;
     }
     .navbar-nav>li
     {
         float: left;
+        margin-right: 15px;
+        font-size: 19px;
+    }
+    .navbar-brand
+    {
+        padding-bottom: 15px;
     }
     #sidebar
     {
@@ -114,6 +132,10 @@ hr
 
 @media (max-width: 767px)
 {
+    .navbar-nav
+    {
+        float: left;
+    }
     .navbar-nav>li
     {
         float: none;
