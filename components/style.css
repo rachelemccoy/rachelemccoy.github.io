@@ -1,7 +1,12 @@
 body
 {
     font-family: Helvetica, Ariel, sans-serif;
-    min-height: 800px
+    text-align:center;
+}
+
+h1
+{
+    margin-bottom: 40px;
 }
 
 #name
@@ -27,11 +32,6 @@ hr
     border-color: #E6E7E8;
 }
 
-body
-{
-    text-align:center;
-}
-
 #body-wrapper
 {
 
@@ -42,10 +42,8 @@ body
     margin-right: 5%;
     padding-left: 100px;
     padding-right: 100px;
+    min-height: 600px;
 }
-
-
-
 
 #navigation
 {
@@ -71,7 +69,6 @@ body
     width: 100%;
 }
 
-
 @media (max-width: 991px)
 {
     .navitem
@@ -85,7 +82,3 @@ body
     }
 
 }
-
-
-
-
