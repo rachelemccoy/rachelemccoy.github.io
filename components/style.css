@@ -11,6 +11,7 @@ h1
     margin-bottom: 40px;
 }
 
+
 #name
 {
     font-family: Helvetica, Ariel, sans-serif;
@@ -46,7 +47,12 @@ hr
     padding-right: 100px;
     min-height: 600px;
 }
-
+.navbar-default 
+{
+     background: 0; 
+     border: none; 
+}
+/*
 #navigation
 {
     list-style: none;
@@ -55,7 +61,11 @@ hr
     font-weight: lighter;
     line-height:1.5;
 }
-
+*/
+.navbar-nav>li
+{
+    float: none;
+}
 #footer
 {
     text-align:center;
@@ -66,9 +76,9 @@ hr
 }
 
 #sidebar
-    {
-        padding-left: 50px;
-    }
+{
+    /*padding-left: 50px;*/
+}
 
 .home-image
 {
@@ -83,13 +93,17 @@ hr
         width: 100%;
         margin-left: 0%;
         margin-right: 0%;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
     .navitem
     {
         display: inline;
         margin-right: 15px;
+    }
+    .navbar-nav>li
+    {
+        float: left;
     }
     #sidebar
     {
@@ -98,13 +112,10 @@ hr
 
 }
 
-
-@media (max-width: 991px)
+@media (max-width: 767px)
 {
-    #body-wrapper
+    .navbar-nav>li
     {
-        padding-left: 5px;
-        padding-right: 5px;
+        float: none;
     }
-
 }
