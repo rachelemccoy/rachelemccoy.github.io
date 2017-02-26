@@ -1,6 +1,7 @@
 body
 {
     font-family: Helvetica, Ariel, sans-serif;
+    min-height: 800px
 }
 
 #name
