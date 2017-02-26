@@ -1,0 +1,20 @@
+.carousel-inner>.item>img
+{
+    margin: auto;
+}
+
+.carousel-control.right, .carousel-control.left
+{
+    background-image: none;
+}
+
+.carousel-control
+{
+    background-color: black;
+    width: 5%;
+}
+
+.carousel-indicators li
+{
+    border-color: black;
+}
