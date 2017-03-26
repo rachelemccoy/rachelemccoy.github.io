@@ -1,9 +1,31 @@
 #body-proper
 {
     font-size: 18px;
+
 }
 
-.diagram
+#body-wrapper
+{
+    padding-top: 0px;
+}
+
+.research-image
+{
+    width: 100%;
+    padding-top: 70px;
+}
+
+.row
+{
+    padding-top: 30px;
+}
+
+p
+{
+    padding-bottom: 12px;
+}
+
+/*.diagram
 {
     margin-top: 50px;
     margin-bottom: 75px;
@@ -26,5 +48,5 @@
 .section
 {
     padding-top: 100px;
-}
+}*/
 
