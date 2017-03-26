@@ -15,27 +15,42 @@
 {
     width: 220px;
     height: 220px;
+    z-index: 1;
 }
 
 .cell .thumb-text
 {
-    position:absolute;
+    position: absolute;
     top: 30px;
     left: 30px;
     color: white;
     font-size: 20px;
-    visibility: hidden;
     width: 190px;
+    z-index: 3;
 }
 
+.cell .mask
+{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    width: 220px;
+    height: 30%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+/*
 .cell:hover .thumb
 {
     -webkit-filter:brightness(50%);
     -moz-filter:brightness(50%);
-    filter: url(#brightness); /* required for FF */
+    filter: url(#brightness);
     filter:brightness(50%);
 }
 .cell:hover .thumb-text
 {
     visibility: visible;
 }
+*/
